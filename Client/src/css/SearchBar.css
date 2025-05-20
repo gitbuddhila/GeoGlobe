@@ -1,0 +1,182 @@
+/* Wrapper for alignment and spacing */
+.countries_searchbar_wrapper {
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* background-color: antiquewhite; */
+    /* max-width:fit-content; */
+  }
+  
+  /* Core search section styling */
+  .search_section {
+    padding: 60px 0px 0px;
+    /* width: 100%; */
+    height: auto;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Input styles */
+  .search_input {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  /* Container for the input and icon */
+  .search_input_div {
+    background-color: rgb(241, 241, 241);
+    border-radius: 60px;
+    /* width: 20%; */
+    min-height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right: px; */
+  }
+  
+  /* Dropdown results box */
+  .search_result {
+    background: white;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+    top: 70px;
+    z-index: 100;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Hide scrollbar for WebKit browsers */
+  .search_result::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Individual suggestion and loading line styles */
+  .search_suggestion_line,
+  .search_loading {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+  }
+  
+  /* Hover and active state for suggestions */
+  .search_suggestion_line:hover,
+  .search_suggestion_line:active {
+    background: rgb(227, 227, 227);
+  }
+  
+  /* Icon styling */
+  .search_icon {
+    /* background-color: rgb(227, 227, 227); */
+    padding: 0 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Active suggestion highlight */
+  .search_suggestion_line.active {
+    background-color: #eee;
+    font-weight: bold;
+    border-left: 4px solid #7d2e63;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .search_input_div {
+      width: 90%;
+      min-height: 45px;
+      padding-right: 10px;
+    }
+  
+    .search_input {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    .search_result {
+      width: 90%;
+      top: 60px;
+    }
+  
+    .search_suggestion_line,
+    .search_loading {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search_input_div {
+      width: 95%;
+      min-height: 40px;
+      padding-right: 8px;
+    }
+  
+    .search_input {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .search_result {
+      width: 95%;
+      top: 55px;
+    }
+  
+    .search_suggestion_line,
+    .search_loading {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .search_icon {
+      padding: 0 10px;
+    }
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .search_input_div {
+      width: 90%;
+      min-height: 45px;
+      padding-right: 30px; /* Adds space for the icon */
+    }
+  
+    .search_input {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    .search_result {
+      width: 90%;
+      top: 60px;
+    }
+  
+    .search_suggestion_line,
+    .search_loading {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    .search_icon {
+      padding: 0 10px; /* Make sure it doesn’t overflow */
+      background-color: rgb(227, 227, 227);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
